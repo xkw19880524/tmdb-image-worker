@@ -1,0 +1,4 @@
+interface:
+  display_name: "TMDB 图片部署与域名优选"
+  short_description: "部署图片 Worker，通过 DNS 和路由应用优选 IP 并验证直连"
+  default_prompt: "使用 $tmdb-image-setup 部署图片 Worker，在用户直连网络优选 IP，通过 DNS-only A 记录与 Worker Route 应用到公开域名，验证后交付图片地址和实测结果。"

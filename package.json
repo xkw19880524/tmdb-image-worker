@@ -1,0 +1,18 @@
+{
+  "name": "tmdb-image-worker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Self-hosted TMDB image proxy with native Cloudflare Workers Cache",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test worker.test.mjs",
+    "dev": "npx --yes wrangler@4.147.0 dev",
+    "deploy": "npx --yes wrangler@4.147.0 deploy",
+    "check:deploy": "npx --yes wrangler@4.147.0 deploy --dry-run",
+    "smoke": "node smoke.mjs"
+  }
+}
